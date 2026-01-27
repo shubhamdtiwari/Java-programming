@@ -64,7 +64,7 @@ Tim's course is known for comprehensive coding exercises. Here are my implementa
 
 ## 🛠️ Tools Used
 
-* **Language:** Java 17 (LTS)
+* **Language:** Java 25 (LTS)
 * **IDE:** IntelliJ IDEA Community Edition (The recommended IDE for the course)
 * **Build System:** Standard Java Project / Maven
 
@@ -74,7 +74,7 @@ Tim's course is known for comprehensive coding exercises. Here are my implementa
 
 * **Instructor:** [Tim Buchalka](https://www.udemy.com/user/timbuchalka/)
 * **Platform:** Udemy
-* **Course:** [Java Programming Masterclass covering Java 11 & Java 17](https://www.udemy.com/course/java-the-complete-java-developer-course/)
+* **Course:** [Java Programming Masterclass covering Java 25](https://www.udemy.com/course/java-the-complete-java-developer-course/)
 
 ---
 
