@@ -6,6 +6,7 @@ class Hello
         int numb = 9;
         int result = numa + numb ;
 
-         System.out.println(result);
+        System.out.println(result);
     }
 }  
+ 
