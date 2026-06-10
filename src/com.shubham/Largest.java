@@ -13,14 +13,18 @@ public class Largest {
 
         // Q: find the largesty of the 3 numbers
 
-        int max = a;
+        // int max = a;
 
-        if(b > max) {
-            max = b;
-        }
-        if(c > max) {
-            max = c;
-        }
+        // if(b > max) {
+        //     max = b;
+        // }
+        // if(c > max) {
+        //     max = c;
+        // }
+
+        // another one
+
+        int max = Math.max(c, Math.max(a,b))
 
         System.out.println(max);
     }
