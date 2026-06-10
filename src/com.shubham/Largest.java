@@ -1,4 +1,4 @@
-package com.shubham;
+package src.com.shubham;
 
 import java.util.Scanner;
 
@@ -13,6 +13,15 @@ public class Largest {
 
         // Q: find the largesty of the 3 numbers
 
-        
+        int max = a;
+
+        if(b > max) {
+            max = b;
+        }
+        if(c > max) {
+            max = c;
+        }
+
+        System.out.println(max);
     }
 }
