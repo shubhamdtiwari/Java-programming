@@ -26,6 +26,18 @@ public class Loops {
             //     System.out.println(num);
             //  }
 
+            for(int i = 0; i <= n; i++) {
+                // System.out.println(i + " ");
+                System.out.println("Hello world");
+            }
+
+            // while loops
+            /*
+            while(condition) {
+            // body
+            }
+            */
+
             
     }
     
