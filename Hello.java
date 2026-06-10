@@ -1,15 +1,12 @@
+class Hello
+{
+    public static void main(String a[]) 
+    {
+        int numa = 8;
+        int numb = 9;
+        int result = numa + numb ;
 
-
-public class Hello {
-
-    public static void main(String args[]) {
-        int A = 1;
-        int B = 5;
-        if(A >= 8) {
-            System.out.println("A is largest of 2");
-        }else{
-            System.out.println("B is largest of 2");
-        }
+        System.out.println(result);
     }
-}
+}  
  
