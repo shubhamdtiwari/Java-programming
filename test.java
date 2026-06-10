@@ -1,7 +1,7 @@
+import java.util.*; 
 
-
-public class Hello {
-
+public class Test {
+    
     public static void main(String args[]) {
         int A = 1;
         int B = 5;
@@ -12,4 +12,3 @@ public class Hello {
         }
     }
 }
- 
