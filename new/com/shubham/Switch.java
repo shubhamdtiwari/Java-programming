@@ -45,7 +45,7 @@ public class Switch{
 //            default -> System.out.println("Enter a valid fruit");
 //        }
 
-        int day = in.nextInt();
+//        int day = in.nextInt();
 //        switch (day) {
 //            case 1 -> System.out.println("Monday");
 //            case 2 -> System.out.println("Tuesday");
@@ -57,24 +57,69 @@ public class Switch{
 //
 //        }
 
-        switch (day) {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:
-                System.out.println("Weekday");
-                break;
-            case 6:
-            case 7:
-                System.out.println("Weekend");
-                break;
+//        switch (day) {
+//            case 1:
+//            case 2:
+//            case 3:
+//            case 4:
+//            case 5:
+//                System.out.println("Weekday");
+//                break;
+//            case 6:
+//            case 7:
+//                System.out.println("Weekend");
+//                break;
+//        }
+
+        // same same
+//        switch (day) {
+//            case 1,2,3,4,5 -> System.out.println("Weekday");
+//            case 6,7 -> System.out.println("Weekend");
+//        }
+
+        int empID = in.nextInt();
+        String department = in.next();
+
+//        switch (empID) {
+//            case 1:
+//                System.out.println("Shubham Tiwari");
+//                break;
+//
+//            case 2:
+//                System.out.println("Rahul kumar");
+//                break;
+//            case 3:
+//                System.out.println("Emp Number 3");
+//                switch (department) {
+//                    case "IT":
+//                        System.out.println("IT Department");
+//                        break;
+//                    case "Management":
+//                        System.out.println("Management Department");
+//                        break;
+//                    default:
+//                        System.out.println("No Department entered");
+//                }
+//
+//                break;
+//            default:
+//                System.out.println("Enter correct EmpID");
+//        }
+
+        switch (empID) {
+            case 1 -> System.out.println("Shubham Tiwari");
+            case 2 -> System.out.println("Rahul kumar");
+            case 3 -> {
+                System.out.println("Emp Number 3");
+                switch (department) {
+                    case "IT" -> System.out.println("IT Department");
+                    case "Management" -> System.out.println("Management Department");
+                    default -> System.out.println("No Department entered");
+                }
+            }
+            default -> System.out.println("Enter correct EmpID");
         }
 
-        switch (day) {
-            case 1,2,3,4,5 -> System.out.println("Weekday");
-            case 6,7 -> System.out.println("Weekend");
-        }
 
     }
 }
