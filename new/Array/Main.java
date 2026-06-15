@@ -23,5 +23,10 @@ public class Main {
         // or directly
         int[] rnos2 = {23, 12,34, 43};
 
+        int[] ros; // declaration of array
+        ros = new int[5]; // initialisation : here object is created
+
+        System.out.println(ros[1]);
+
     }
 }
