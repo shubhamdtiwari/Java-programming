@@ -1,4 +1,4 @@
-package src;
+package practise;
 
 public class TypeCasting {
     public static void main(String[] args) {
