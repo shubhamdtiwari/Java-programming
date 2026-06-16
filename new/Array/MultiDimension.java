@@ -1,5 +1,6 @@
 package Array;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MultiDimension {
@@ -20,7 +21,7 @@ public class MultiDimension {
 //        };
 
 
-        int[][] arr = new int[3][4];
+        int[][] arr = new int[3][3];
         System.out.println(arr.length); // no. of rows
 
         // input
@@ -29,6 +30,20 @@ public class MultiDimension {
             for (int col = 0; col < arr[row].length; col++){
                 arr[row][col] = in.nextInt();
             }
+        }
+
+        // output
+//        for (int row = 0; row < arr.length; row++) {
+//            // for each col in every row
+////            for (int col = 0; col < arr[row].length; col++){
+////                System.out.println(arr[row][col] + " ");
+////            }
+////            System.out.println();
+//            System.out.println(Arrays.toString(arr[row]));
+//        }
+
+        for(int[] a: arr) {
+            System.out.println(Arrays.toString(a));
         }
 
     }
