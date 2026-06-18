@@ -1,4 +1,4 @@
-package Array;
+package DSA_topics;
 
 public class ArraySearch {
 
