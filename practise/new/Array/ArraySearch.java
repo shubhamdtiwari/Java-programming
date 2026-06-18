@@ -3,7 +3,10 @@ package Array;
 public class ArraySearch {
 
     public static void main(String[] args) {
-        
+        int[] nums = {23, 45, 1 , 3, 3, 27, 34, 67};
+        int target = 7;
+        int ans = linearSearch(nums, target);
+        System.out.println(ans);
     }
 
     // search in the array: return the index if item found
@@ -14,6 +17,14 @@ public class ArraySearch {
         }
 
         // run a for loop
-        for
+        for(int index = 0; index < arr.length; index++) {
+            // cheak for element at every index if it is = target
+            int element = arr[index];
+            if(element == target) {
+                return index;
+            }
+        
+        }
+        return -1;
     }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
 }
