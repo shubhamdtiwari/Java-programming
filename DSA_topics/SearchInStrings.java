@@ -7,6 +7,21 @@ public class SearchInStrings {
         System.out.println(search(name, target));
 
     }
+
+    static boolean search2(String str, char target) {
+        if(str.length() == 0) {
+            return false;
+        }
+
+       for(char ch : str.toCharArray()){
+        if(ch == target) {
+            return true;
+        }
+       }
+        return false;
+    }
+
+
     static boolean search(String str, char target) {
         if(str.length() == 0) {
             return false;
