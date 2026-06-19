@@ -1,4 +1,4 @@
-package DSA_topics;
+package DSA_topics.LinearSeachAlgo;
 
 public class SearchInStrings {
     public static void main(String[] args) {
