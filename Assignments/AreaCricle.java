@@ -10,13 +10,13 @@ public class AreaCricle {
     //    double AreaCricle = 3.14 * radius * radius;
 
     //    System.out.println(AreaCricle);
-    System.out.println(AreaCricle(radius));
+    System.out.println(AreaCricles(radius));
 
 
     }
 
 // using function method
-    static double AreaCricle(double radius) {
+    static double AreaCricles(double radius) {
         return 3.14 * radius * radius;
     }
   
