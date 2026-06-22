@@ -5,40 +5,41 @@ public class OrderAgnosticBS {
 
     int[] arr = {3,4, 5, 8,13,24,56,78,87};
     int target = 78;
-    System.out.println(OrderAgnosticsBS(arr, target));
+    System.out.println(orderAgnosticBS(arr, target));
         
     }
-    static int OrderAgnosticsBS(int[] arr, int target) {
+    static int orderAgnosticBS(int[] arr, int target) {
         int s = 0;
         int e = arr.length - 1;
-        if(e > s) { // incresing
 
-            while( e > s) {
-                int mid = s + (s - e) / 2;
 
-                if(arr[mid] > target) {
-                    e = mid - 1;
-                }else if( arr[mid] < target) {
-                    s = mid + 1;
-                }else{
-                    return mid;
-                }
+        // find whether the array is sorted in ascending and decending order
+        boolean isAsc = arr[s] < arr[e];
 
+         while (s <= e) {
+            // find the middle element
+            // int mid = (start + end) / 2;
+            // maybe (start + end) exceed the range of int in java
+            int mid = s + (e - s) / 2; // better way to calc mid
+            if(arr[mid] == target){
+                return mid;
             }
-        }else if(e < s) {
-            while( e >= s) {
-                int mid = s + (s - e) / 2;
 
-                if(arr[mid] > target) {
-                    e = mid + 1;
-                }else if( arr[mid] < target) {
-                    s = mid - 1;
+            if(isAsc) {
+                  if( target < arr[mid]) {
+                    e = mid - 1;
+                 }else {
+                    s = mid + 1;
+                 }
                 }else {
-                    return mid;
+                if( target > arr[mid]) {
+                    e = mid - 1;
+                 }else {
+                    s = mid + 1;
                 }
-        }
+            }
+         }
+         return -1;
+
     }
-    return -1;
-    
-}
 }
