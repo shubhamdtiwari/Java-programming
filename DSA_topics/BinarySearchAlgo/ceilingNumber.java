@@ -15,6 +15,11 @@ public class ceilingNumber {
 
         // ceiling number means number greater than or equal to the given number
 
+        // if the target element is greater than the greatest number in the array
+
+        if(target > arr[arr.length - 1]){
+            return -1;
+        }
         while(start <= end){
 
             int mid = start + (end - start) / 2;
