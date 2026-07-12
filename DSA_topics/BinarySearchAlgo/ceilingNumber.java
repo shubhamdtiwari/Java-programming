@@ -2,7 +2,7 @@ package DSA_topics.BinarySearchAlgo;
 
 public class ceilingNumber {
     public static void main(String[] args) {
-        int[] arr = {2, 3, 5, 9, 14, 16, 17, 18};
+        int[] arr = {2, 3, 5, 9, 14, 15, 17, 18};
         int target = 15;
 
         int ans = ceilingNum(arr, target);
@@ -13,7 +13,7 @@ public class ceilingNumber {
         int start = 0;
         int end = arr.length - 1;
 
-        
+        // ceiling number means number greater than or equal to the given number
 
         while(start <= end){
 
