@@ -2,25 +2,34 @@ package DSA_topics.BinarySearchAlgo;
 
 public class mountainArray {
     public static void main(String[] args) {
+
         
-    }
-    int foundInMountainArray(int target, MountainArray mountainArr){
         
     }
 
-    static int BinarySearch(int[] arr, int target, int start, int end){
+    int search(int[] arr){
+        int peak = peakIndexInMountainArray(arr);
+        int firstTry = binarySearch(arr, target, )
 
-        while(start <= end){
+    }
+        
+    
+
+    static int peakIndexInMountainArray(int[] arr){
+        int start = 0;
+        int end = arr.length - 1;
+
+        while(start < end){
             int mid = start + ( end - start) / 2;
 
-            if(target < arr[mid]){
-                end = mid - 1;
-            }else if(target > arr[mid]){
-                start = mid - 1;
-            }else{
-                return mid;
+            if(arr[mid + 1] < arr[mid]){
+                end = mid;
+            }else {
+                start = mid + 1;
             }
         }
-        return -1;
+       
     }
+
+    static int bimarysearch(int[] arr, int target)
 }
