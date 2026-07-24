@@ -2,7 +2,7 @@ package DSA_topics.BinarySearchAlgo;
 
 public class rotatedArraywithDuplicates {
     public static void main(String[] args) {
-        int[] arr = {2, 9, 2, 2, 2, 2};
+        int[] arr = {2, 9, 2, 2, 2};
 
         System.out.println(pivot(arr));
 
