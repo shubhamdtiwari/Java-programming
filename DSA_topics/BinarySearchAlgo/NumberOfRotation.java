@@ -13,11 +13,18 @@ public class NumberOfRotation {
         while(s <= e){
             int m = s + ( e - s) / 2;
 
-            if(arr[m] > arr[m + 1] && arr[m] < arr[m - 1]){
+          if(m < e && arr[m] > arr[m + 1]){
+                return m + 1;
+            }
+            if(m > s && arr[m] < arr[m - 1]){
                 return m;
             }
+            if(arr[m] <= arr[s]){
+                e = m - 1;
+            }else{
+                s = m + 1;
+            }
 
-            
         }
         return -1;
     }
