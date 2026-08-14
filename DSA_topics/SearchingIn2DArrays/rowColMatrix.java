@@ -1,6 +1,5 @@
 package DSA_topics.SearchingIn2DArrays;
 
-import java.lang.reflect.Array;
 
 public class rowColMatrix {
     public static void main(String[] args) {
