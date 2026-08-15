@@ -1,8 +1,17 @@
 package DSA_topics.SearchingIn2DArrays;
 
+
+import java.util.Arrays;
+
 public class searchInSortedMatrix {
     public static void main(String[] args) {
-        
+        int[][] arr = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+
+        System.out.println(Arrays.toString(search(arr, 99)));
     }
 
     // search in the row provided between the cols provided
@@ -58,7 +67,29 @@ public class searchInSortedMatrix {
         if(matrix[rstart][cMid] == target) {
             return new int[]{rstart, cMid};
         }
-        
+
+        if(matrix[rstart + 1][cMid] == target) {
+            return new int[]{rstart + 1, cMid};
+        }
+
+
+        // search in 1st half
+        if(target <= matrix[rstart][cMid - 1]){
+            return binarySearch(matrix, rstart, 0, cMid - 1, target);
+        }
+        // search in 2nd half
+        if(target >= matrix[rstart][cMid + 1] && target <= matrix[rstart][cols - 1]){
+            return binarySearch(matrix, rstart, cMid - 1, cols - 1, target);
+            
+        }
+        // search in 3rd half
+        if(target <= matrix[rstart + 1][cMid - 1]){
+            return binarySearch(matrix, rstart + 1, 0, cMid - 1, target);
+            
+        }else {
+            return binarySearch(matrix, rstart + 1, cMid + 1, cols - 1, target);
+        }
+
 
     }
 }
