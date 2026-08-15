@@ -9,7 +9,12 @@ public class searchInSortedMatrix {
         while(cStart <= cEnd){
             int mid = cStart + (cEnd - cStart) / 2;
 
-            if()
+            if(matrix[row][mid] == target){
+                return new int[]{row, mid};
+            }
+            if(matrix[row][mid] < target){
+                
+            }
         }
     }
 
