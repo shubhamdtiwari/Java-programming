@@ -5,7 +5,7 @@ public class searchInSortedMatrix {
         
     }
 
-    // search in the 
+    // search in the row provided between the cols provided
     static int[] binarySearch(int[][] matrix, int row, int cStart, int cEnd, int target){
         while(cStart <= cEnd){
             int mid = cStart + (cEnd - cStart) / 2;
@@ -27,7 +27,38 @@ public class searchInSortedMatrix {
         int cols = matrix[0].length;
 
         if(rows == 1){
-
+            return binarySearch(matrix, 0, 0, cols-1, target);
         }
+
+        int rstart = 0;
+        int rEnd = rows - 1;
+
+        int cMid = cols / 2;
+
+        // run the loop till 2 rows are remaining 
+        while(rstart < (rEnd - 1)){
+            // while this is true it will have more than 2 rows
+
+            int mid = rstart + (rEnd - rstart) / 2;
+
+            if(matrix[mid][cMid] == target){
+                return new int[]{mid, cMid};
+            }
+
+            if(matrix[mid][cMid] < target){
+                rstart = mid;
+            }else {
+                rEnd = mid;
+            }
+        }
+
+        // now we have two rows
+
+        // cheak wheather the target is in the col of 2 rows
+        if(matrix[rstart][cMid] == target) {
+            return new int[]{rstart, cMid};
+        }
+        
+
     }
 }
