@@ -7,6 +7,10 @@ public class string {
         String p3 = "shubham";
         String p4 = "shubham";
 
+        String p5 = p1;
+
+        System.out.println(p5 == p1); // it will give true as it point to same object
+
         // here all person prefer to same object which is created in the heap memory
 
         p2 = "tiwari";
@@ -34,8 +38,12 @@ public class string {
 
         // now we have created two object in heap but outside the pool
 
-        System.out.println(a == b);
+        System.out.println(a == b); // it is compariter
         // it will give false as both a and b point to diffrent object in heap memory
+
+        // for cheaking if values are equal
+
+        System.out.println(a.equals(b)); // it is a method
 
     }
 }
