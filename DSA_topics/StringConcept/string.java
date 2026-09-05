@@ -27,5 +27,15 @@ public class string {
 
         // == checks if the refernce variables are pointing to same object
 
+        // for creating two object in heap we use new keyword
+
+        String a = new String("Shubham");
+        String b = new String("Shubham");
+
+        // now we have created two object in heap but outside the pool
+
+        System.out.println(a == b);
+        // it will give false as both a and b point to diffrent object in heap memory
+
     }
 }
