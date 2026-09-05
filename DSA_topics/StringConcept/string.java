@@ -1,0 +1,31 @@
+package DSA_topics.StringConcept;
+
+public class string {
+    public static void main(String[] args) {
+        String p1 = "shubham";
+        String p2 = "shubham"; // it is save in string pool in heap memory
+        String p3 = "shubham";
+        String p4 = "shubham";
+
+        // here all person prefer to same object which is created in the heap memory
+
+        p2 = "tiwari";
+
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+        System.out.println(p4);
+
+        // from this above example we know that string is immutable
+
+        System.out.println(p1 == p2);
+        // it shows false as it is changed above as it create a new object in heap
+        // memory
+
+        System.out.println(p1 == p3);
+        // it shows true as both p1 and p3 points to same object in heap memory pool
+
+        // == checks if the refernce variables are pointing to same object
+
+    }
+}
