@@ -5,5 +5,18 @@ public class opreters {
         System.out.println('a' + 'b'); // 195
         System.out.println("a" + "b"); // ab
         System.out.println((char)('a' + 3)); // d
+
+        System.out.println("a" + 1); // a1
+
+        System.out.println("a" + 1);
+        // this is same as after a few steps: "a" + "1"
+        // integer will be converted to integer that will call toString()
+
+        System.out.println("Shubh" + new ArrayList<>());
+
+        System.out.println("Shubh" + new Integer(56));
+
+        String ans = new Integer(56) + '' + new ArrayList<>();
+        System.out.println(ans);
     }
 }
