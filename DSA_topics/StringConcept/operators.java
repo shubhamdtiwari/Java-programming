@@ -2,7 +2,7 @@ package DSA_topics.StringConcept;
 
 import java.util.ArrayList;
 
-public class opreters {
+public class operators {
 
     public static void main(String[] args) {
         System.out.println('a' + 'b'); // 195
