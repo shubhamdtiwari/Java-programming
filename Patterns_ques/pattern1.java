@@ -1,5 +1,12 @@
 package Patterns_ques;
 
+// *****
+
+// *****
+// *****
+// *****
+// *****
+
 public class pattern1 {
     public static void main(String[] args) {
         p1(5);
