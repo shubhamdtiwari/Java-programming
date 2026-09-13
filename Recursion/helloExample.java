@@ -1,6 +1,6 @@
 package Recursion;
 
-public class helloRecursion {
+public class helloExample {
     public static void main(String[] args) {
         // write a function that prints hello world
         message();
