@@ -16,5 +16,7 @@ public class SB {
         System.out.println(builder);
 
         builder.charAt(1);
+
+        System.out.println(builder.hashCode());
     }
 }
