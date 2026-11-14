@@ -2,10 +2,13 @@ package IfKeywordAndCodeBlocks;
 
 public class MainChallenge {
     public static void main(String[] args) {
-        // boolean gameOver = true;
-        // int score = 800;
-        // int levelCompleted = 5;
-        // int bonus = 100;
+        boolean gameOver = true;
+        int score = 800;
+        int levelCompleted = 5;
+        int bonus = 100;
+
+        int highScore = calculation1(gameOver, score, levelCompleted, bonus);
+        System.out.println("The highscore is " + highScore);
 
         // int finalScore = score;
 
@@ -14,14 +17,15 @@ public class MainChallenge {
         //     System.out.println("Your final score was " + finalScore);
         // }
 
-        calculation(true, 800, 5, 100);
+        // calculation(true, 800, 5, 100);
         /////////////////
 
         // gameOver = true;
-        // score = 10000;
-        // levelCompleted = 8;
-        // bonus = 200;
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
 
+        System.out.println("The next highscore is " + calculation1(gameOver, highScore, levelCompleted, bonus));
         // finalScore = score;
 
         // if(gameOver){
@@ -40,5 +44,15 @@ public class MainChallenge {
             finalScore += 1000;
             System.out.println("Your final score was " + finalScore);
         }
+    }
+
+    public static int calculation1(boolean gameOver, int score, int levelCompleted, int bonus){
+        int finalScore = score;
+
+        if(gameOver){
+            finalScore += (levelCompleted * bonus);
+            finalScore += 1000;
+        }
+        return finalScore;
     }
 }
