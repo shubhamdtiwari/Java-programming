@@ -17,8 +17,8 @@ I am organizing my code by the key modules taught in the course.
 
 | Module | Topic | Key Concepts | Status |
 | :--- | :--- | :--- | :--- |
-| **Part 1** | **First Steps** | Variables, Primitive Types, Casting, Strings | 🔄 |
-| **Part 2** | **Control Flow** | `switch`, `for`, `while`, Parsing Values | ⏳ |
+| **Part 1** | **First Steps** | Variables, Primitive Types, Casting, Strings | ✅ |
+| **Part 2** | **Control Flow** | `switch`, `for`, `while`, Parsing Values | 🔄 |
 | **Part 3** | **OOP Part 1** | Classes, Constructors, Inheritance, `this` vs `super` | ⏳ |
 | **Part 4** | **OOP Part 2** | Composition, Encapsulation, Polymorphism | ⏳ |
 | **Part 5** | **Arrays & Lists** | ArrayList, Autoboxing/Unboxing, LinkedList | ⏳ |
